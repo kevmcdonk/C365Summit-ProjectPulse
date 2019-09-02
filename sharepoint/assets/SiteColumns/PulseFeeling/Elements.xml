@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{35b1e542-eee2-4ca7-92eb-5ae81aff4d60}"
+       Name="PulseFeeling"
+       DisplayName="Pulse Feeling"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

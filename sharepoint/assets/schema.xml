@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<List xmlns:ows="Microsoft SharePoint" Title="Basic List" EnableContentTypes="TRUE" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Basic List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <!--<ContentTypes>
+      <ContentTypeRef ID="0x01007B55396B820449D2A3347A874C9D0944" />
+    </ContentTypes>-->
+    <Fields>
+      <!-- Rename the out of the box Title column -->
+      <Field ID="{82642EC8-EF9B-478F-ACF9-31F7D45FBC31}"
+            Type="Computed"
+            Name="LinkTitle"
+            DisplayName="Pulse Feeling" />
+      <Field ID="{BC91A437-52E7-49E1-8C4E-4698904B2B6D}"
+            Type="Computed"
+            Name="LinkTitleNoMenu"
+            DisplayName="Pulse Feeling" />
+      <Field ID="{FA564E0F-0C70-4AB9-B863-0177E6DDD247}"
+            Type="Text"
+            Name="Title"
+            DisplayName="Pulse Feeling" />
+      <Field ID="{89b96b86-bbe7-4723-a3d3-9c61ed6d158c}"
+            Type="Text"
+            Name="PulseThoughts"
+            DisplayName="Pulse Thoughts" />
+            
+    </Fields>
+    <Views>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouhttps://devofficecdn.azureedge.net/sharepointdocumentation/images/generic.png" Url="AllItems.aspx">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="Created"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID" />
+          </OrderBy>
+        </Query>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
